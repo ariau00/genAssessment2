@@ -1,0 +1,40 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navPadding{
+    padding: 16px 24px 16px 24px !important;
+}
+
+.navItemPadding{
+    padding: 0 16px 0 0px !important;
+}
+
+.px16px{
+    padding: 0 16px 0 16px !important;
+}
+
+.px24px{
+    padding: 0 24px 0 24px !important;
+}
+
+.px32px{
+    padding: 0 32px 0 32px !important;
+}
+
+/* .py16px{
+    padding: 16px 0px 16px 0px !important;
+} */
+
+@media only screen and (min-width: 768px) {
+    .navbarDesktop{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbarMobile{
+        display: none !important;
+    }
+}
