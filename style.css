@@ -11,18 +11,15 @@
     padding: 0 16px 0 0px !important;
 }
 
-
-
-
-/* .py16px{
-    padding: 16px 0px 16px 0px !important;
-} */
-
 .startBtnP{
     padding: 8px 0 8px 0 !important;
 }
+.infoItemTextPadding{
+    padding: 8px 0 8px 0 !important;
+}
 @media only screen and (min-width: 768px) {
-    .navbarDesktop{
+    .navbarDesktop,
+    .infoDesktop{
         display: none !important;
     }
     .bannerPadding{
@@ -34,17 +31,30 @@
     .bannerContentPadding{
         padding: 0px 24px 24px 0px !important;
     }
+    .bannerTitlePadding2{
+        padding: 32px 24px 24px 0px !important;
+    }
+    .infoItemPadding{
+        padding: 32px 16px 32px 0px !important;
+    }
+    .infoItemPaddingCh{
+        padding: 16px !important;
+    }
+    .infoItemPaddingChFirst{
+        padding: 0 16px 16px 16px !important;
+    }
 }
 
 @media only screen and (max-width: 767px) {
-    .navbarMobile{
+    .navbarMobile,
+    .infoMobile{
         display: none !important;
     }
     .bannerPadding{
         padding: 0px !important;
     }
     .bannerTextPadding{
-        padding: 0 16px 0 16px !important;
+        padding: 0 16px 32px 16px !important;
     } 
     .bannerTitlePadding{
         padding: 32px 0px 32px 0px !important;
@@ -52,5 +62,10 @@
     .bannerContentPadding{
         padding: 0px 0px 24px 0px !important;
     }
-
+    .infoItemPadding{
+        padding: 16px !important;
+    }
+    .infoTextPadding{
+        padding: 64px 16px 64px 16px !important;
+    }
 }
