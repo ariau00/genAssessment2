@@ -1,104 +1,179 @@
-*{
+* {
     padding: 0 !important;
     margin: 0 !important;
 }
 
-.navPadding{
+.navPadding {
     padding: 16px 24px 16px 24px !important;
 }
 
-.navItemPadding{
+.navItemPadding {
     padding: 0 16px 0 0px !important;
 }
 
-.infoItemTextPadding{
+.infoItemTextPadding {
     padding: 8px 0 8px 0 !important;
 }
-.startLearningP{
+
+.startLearningP {
     padding: 32px 0 32px 0 !important;
 }
+
+.footerPadding{
+    padding: 16px 24px 16px 24px !important;
+}
+
 @media only screen and (min-width: 768px) {
-    .startBtnP{
+    .startBtnP {
         padding: 8px 0 8px 0 !important;
     }
+
     .navbarDesktop,
     .infoDesktop,
-    .startLearningDesktop{
+    .startLearningDesktop {
         display: none !important;
     }
-    .bannerPadding{
+
+    .bannerPadding {
         padding: 32px 24px 32px 24px !important;
     }
-    .bannerTitlePadding{
+
+    .bannerTitlePadding {
         padding: 32px 24px 32px 0px !important;
     }
-    .bannerContentPadding{
-        padding: 0px 24px 24px 0px !important;
+
+    .bannerContentPadding,
+    .video {
+        padding: 0px 24px 32px 0px !important;
     }
-    .bannerTitlePadding2{
+
+    .bannerTitlePadding2 {
         padding: 32px 24px 24px 0px !important;
     }
-    .infoItemPadding{
+
+    .infoItemPadding {
         padding: 32px 16px 32px 0px !important;
     }
-    .infoItemPaddingCh{
+
+    .infoItemPaddingCh {
         padding: 16px !important;
     }
-    .infoItemPaddingChFirst{
+
+    .infoItemPaddingChFirst {
         padding: 0 16px 16px 16px !important;
     }
-    
-    .startLearningPX{
+
+    .startLearningPX {
         padding: 0px 56px 0px 56px !important;
     }
-    .coursesPadding{
+
+    .coursesPadding {
         padding: 8px 0 8px 0 !important;
     }
-    .card-body{
-        padding:16px 16px 24px 16px !important;
-        background-color: rgba(255,255,255,1);
+
+    .card-body {
+        padding: 16px 16px 24px 16px !important;
+        background-color: rgba(255, 255, 255, 1);
         /* height: 100%; */
     }
-    .startLearningPX > .myCard:nth-child(3n-1),
-    .startLearningPX > .myCard:nth-child(3n),
-    .startLearningPX > .myCard:nth-child(3n+1){
-        
+
+    .startLearningPX>.myCard:nth-child(3n-1),
+    .startLearningPX>.myCard:nth-child(3n),
+    .startLearningPX>.myCard:nth-child(3n+1) {
+
         padding: 0 16px 32px 16px !important;
+    }
+
+    .videoPadding {
+        padding: 32px 24px 0 24px !important;
+    }
+
+    .videoTitle {
+        padding: 0 0 32px 0 !important;
+    }
+
+    .videoTextP {
+        padding: 24px 0 8px 0 !important;
+    }
+
+    .info-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .info-grid-item {
+        /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .grid-item {
+        /* border: 1px solid rgba(0, 0, 0, 0.8); */
+        text-align: center;
+    }
+    .videoCube{
+        padding: 16px 16px 16px 16px !important;
     }
 }
 
 @media only screen and (max-width: 767px) {
+
     .navbarMobile,
     .infoMobile,
-    .startLearningPX{
+    .startLearningPX,
+    .videoMobile {
         display: none !important;
     }
-    .bannerPadding{
+
+    .bannerPadding {
         padding: 0px !important;
     }
-    .bannerTextPadding{
+
+    .bannerTextPadding {
         padding: 0 16px 32px 16px !important;
-    } 
-    .bannerTitlePadding{
+    }
+
+    .bannerTitlePadding {
         padding: 32px 0px 32px 0px !important;
     }
-    .bannerContentPadding{
+
+    .bannerContentPadding {
         padding: 0px 0px 24px 0px !important;
     }
-    .infoItemPadding{
+
+    .infoItemPadding {
         padding: 16px 16px 0px 16px !important;
         /* background-color:aqua; */
     }
-    .infoTextPadding{
+
+    .infoTextPadding {
         padding: 64px 16px 64px 16px !important;
     }
-    .startLearningBtn{
+
+    .startBtnP {
+        padding: 16px 0 16px 0 !important;
+    }
+    .startLearningBtn {
         padding: 0 16px 8px 16px !important;
     }
-    .startLearningBtnLast{
+
+    .startLearningBtnLast {
         padding: 0 16px 32px 16px !important;
     }
-    .startBtnP{
+
+    .startLearningBtnP {
         padding: 16px 16px 24px 16px !important;
+    }
+    .videoTitle {
+        padding: 32px 0 32px 0 !important;
+    }
+    .video{
+        padding-bottom: 24px !important;
     }
 }
