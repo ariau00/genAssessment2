@@ -179,6 +179,13 @@
         padding: 64px 16px 64px 16px !important;
     }
 
+    .panel > :nth-child(1n+2){
+        padding: 16px 16px 0 16px !important;
+    }
+    .panel > :last-child{
+        padding: 16px !important;
+    }
+
     .startBtnP {
         padding: 16px 0 16px 0 !important;
     }

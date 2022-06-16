@@ -85,7 +85,7 @@
                         <img class="h-auto infoItemPaddingChFirst" src="/images/information-orientation.jpg"
                             width="100%" alt="information orientation">
                     </div>
-                    
+
                     <div class="col-8 align-self-center">
                         <h4>Orientation date</h3>
                             <h6 class="text-secondary infoItemTextPadding">Tue 10/11 & Wed 10/12: 8am-3pm</h6>
@@ -151,7 +151,7 @@
 
             <div class="col-4 myCard">
                 <img class="card-img-top" src="/images/course-software.jpg" alt="planting in the spring">
-                <div class="card-body ">
+                <div class="card-body">
                     <h4 class="text-secondary">
                         Software engineering
                     </h4>
@@ -219,21 +219,70 @@
 
             <div class="startLearningBtn w-100">
                 <button class="accordion">Software engineering</button>
+                <div class="panel">
+                    <img class="card-img-top" src="/images/course-software.jpg" alt="planting in the spring">
+                    <h4 class="text-secondary">
+                        Software engineering
+                    </h4>
+                    <h6 class="text-secondary coursesPadding">COURSES</h6>
+                    <h6 class="text-secondary">Web Development, Mobile Development, iOT, APIs</h6>
+                </div>
             </div>
             <div class="startLearningBtn w-100">
                 <button class="accordion">Computer art</button>
+                <div class="panel">
+                    <img class="card-img-top" src="/images/course-computer-art.jpg" alt="planting in the spring">
+                    <h4 class="text-secondary">
+                        Computer art
+                    </h4>
+                    <h6 class="text-secondary coursesPadding">COURSES</h6>
+                    <h6 class="text-secondary">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer
+                        Animatino</h6>
+                </div>
             </div>
             <div class="startLearningBtn w-100">
                 <button class="accordion">Design</button>
+                <div class="panel">
+                    <img class="card-img-top" src="/images/course-design.jpg" alt="planting in the spring">
+                    <h4 class="text-secondary">
+                        Design
+                    </h4>
+                    <h6 class="text-secondary coursesPadding">COURSES</h6>
+                    <h6 class="text-secondary">User Experience Design, User Research, Visual Design</h6>
+                </div>
             </div>
             <div class="startLearningBtn w-100">
                 <button class="accordion">Data</button>
+                <div class="panel">
+                    <img class="card-img-top" src="/images/course-computer-art.jpg" alt="planting in the spring">
+                    <h4 class="text-secondary">
+                        Data
+                    </h4>
+                    <h6 class="text-secondary coursesPadding">COURSES</h6>
+                    <h6 class="text-secondary">Data Science, Big Data, SQL, Data Visualization</h6>
+                </div>
             </div>
             <div class="startLearningBtn w-100">
                 <button class="accordion">Business</button>
+                <div class="panel">
+                    <img class="card-img-top" src="/images/course-software.jpg" alt="planting in the spring">
+                    <h4 class="text-secondary">
+                        Business
+                    </h4>
+                    <h6 class="text-secondary coursesPadding">COURSES</h6>
+                    <h6 class="text-secondary">Product Development, Business Development, Startup</h6>
+                </div>
             </div>
             <div class="startLearningBtnLast w-100">
                 <button class="accordion">Marketing</button>
+                <div class="panel">
+                    <img class="card-img-top" src="/images/course-business.jpg" alt="planting in the spring">
+                    <h4 class="text-secondary">
+                        Marketing
+                    </h4>
+                    <h6 class="text-secondary coursesPadding">COURSES</h6>
+                    <h6 class="text-secondary">Analytics, Content Marketing, Mobile Marketing</h6>
+                </div>
             </div>
         </div>
 
@@ -259,7 +308,7 @@
                         <img class="h-auto videoCube" src="/images/thesis-fisma.jpg" width="100%"
                             alt="information orientation">
                     </div>
-                    
+
                     <div class="grid-item align-self-center text-left">
                         <div>
                             <h5>
@@ -299,12 +348,27 @@
         function changeColor(x) {
             x.style.backgroundColor = 'grey';
         }
-        
+
         function resetColor(x) {
             x.style.backgroundColor = 'white';
         }
-        </script>
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
