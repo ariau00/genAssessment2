@@ -23,6 +23,29 @@
     padding: 16px 24px 16px 24px !important;
 }
 
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 16px 16px 16px 16px !important;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
 @media only screen and (min-width: 768px) {
     .startBtnP {
         padding: 8px 0 8px 0 !important;
